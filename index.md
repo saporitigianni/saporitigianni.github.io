@@ -1,37 +1,20 @@
-## Gianni Saporiti
+## [coinmarketcappy](https://github.com/saporitigianni/coinmarketcappy)
+- Makes API calls or scrapes data from [coinmarketcap.com](https://coinmarketcap.com/) which according to their [FAQ](https://coinmarketcap.com/faq/) is free to use as long as you cite them as the source. 
+- Allows saving data to JSON or CSV formats.
+- Install with `pip install coinmarketcappy` and use `help()` on any method to view basic documentation.
 
-You can use the [editor on GitHub](https://github.com/saporitigianni/saporitigianni.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## [fixerio3](https://github.com/saporitigianni/fixerio3)
+- Interacts with the [fixer.io](https://fixer.io/) JSON API to retrieve currency exchange rates.
+- Caches the results locally to limit the number of API calls made to the service and speed up subsequent access times.
+- Work in progress, they recently changed their API so it might need some adjustments.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Single Level FTSE Russell Capping
+- Takes in a set of JSON formatted financial information for a given set of assets and returns the market cap weighted version of the data capped at the specified percentage using the single-level method.
 
-### Markdown
+## CCArbitrage
+- Private, automated cryptocurrency arbitrage system integrated with about 10 exchanges that searches and automatically executes arbitrage opportunities.
+- Needs some work handling asymmetrically stale and failed order pairs.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/saporitigianni/saporitigianni.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## onestop_financial
+- Takes in a JSON formatted set of financial data for a given asset or fund and runs several metrics on the data such as Sharpe ratio, Sortino ratio, etc.
+- For funds it can also evaluate different strategies/timeframes/weights and return a comparison.
